@@ -48,11 +48,13 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   use "rebelot/kanagawa.nvim"
+  use 'sainnhe/sonokai'
   use 'navarasu/onedark.nvim'
   use 'Mofiqul/vscode.nvim'
   use "EdenEast/nightfox.nvim"
@@ -85,6 +87,12 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+  -- lualine 
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
 
   -- Git
   use "lewis6991/gitsigns.nvim"
