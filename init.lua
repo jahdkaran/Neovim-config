@@ -19,6 +19,7 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.copilot"
+require "user.illuminate"
 
 -- set neovim env variable for lua
 -- set env termbidi
