@@ -18,3 +18,9 @@ require "user.impatient"
 require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
+require "user.copilot"
+
+-- set neovim env variable for lua
+-- set env termbidi
+vim.api.nvim_command('set termbidi')
+
