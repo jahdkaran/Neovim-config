@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
   use "moll/vim-bbye"
+  use "akinsho/toggleterm.nvim"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -59,6 +60,7 @@ return packer.startup(function(use)
   use 'navarasu/onedark.nvim'
   use 'Mofiqul/vscode.nvim'
   use "EdenEast/nightfox.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

@@ -1,5 +1,8 @@
 local colorscheme = "onedark"
 
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+
+
 require('onedark').setup {
     style = 'warm'
 }
