@@ -59,6 +59,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "folke/trouble.nvim"
   use "norcalli/nvim-colorizer.lua"
+  use {'stevearc/dressing.nvim'}
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

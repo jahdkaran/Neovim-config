@@ -3,6 +3,21 @@ if not null_ls_status_ok then
   return
 end
 
+local status1_ok, masonlspconfig = pcall(require, "mason-lspconfig")
+if not status1_ok then
+	return
+end
+
+local servers = {
+  "stylua",
+  "black",
+  "prettier",
+  "clang-format",
+}
+masonlspconfig.setup({
+  ensure_installed = servers,
+})
+
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
 local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
@@ -13,6 +28,7 @@ null_ls.setup {
   sources = {
     formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
     formatting.black.with { extra_args = { "--fast" } },
+    formatting.clang_format.with { extra_args = { "--style=file" } },
     -- formatting.yapf,
     formatting.stylua,
     diagnostics.flake8,

@@ -22,6 +22,7 @@ require "user.copilot"
 require "user.illuminate"
 require "user.trouble"
 require "user.colorizer"
+require "user.dressing"
 
 -- set neovim env variable for lua
 -- set env termbidi
