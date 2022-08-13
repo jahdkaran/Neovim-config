@@ -21,8 +21,10 @@ require "user.whichkey"
 require "user.copilot"
 require "user.illuminate"
 require "user.trouble"
+require "user.todo-comments"
 require "user.colorizer"
 require "user.dressing"
+require "user.diffview"
 
 -- set neovim env variable for lua
 -- set env termbidi

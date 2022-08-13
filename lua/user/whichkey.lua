@@ -93,6 +93,7 @@ local mappings = {
 		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Find files",
 	},
+  ["n"] = { "<cmd>TodoTelescope<cr>", "Notes and Todo" },
 
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
@@ -106,6 +107,12 @@ local mappings = {
 		S = { "<cmd>PackerStatus<cr>", "Status" },
 		u = { "<cmd>PackerUpdate<cr>", "Update" },
 	},
+
+  d = {
+    name = "Diffview",
+    o = { "<cmd>DiffviewOpen<cr>", "Open" },
+    c = { "<cmd>DiffviewClose<cr>", "Close" },
+  },
 
 	g = {
 		name = "Git",
@@ -129,6 +136,7 @@ local mappings = {
 			"Diff",
 		},
 	},
+
 
 	l = {
 		name = "LSP",

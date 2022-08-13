@@ -11,7 +11,7 @@ lualine.setup {
     theme = 'auto',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
-    disabled_filetypes = {"alpha", "dashboard", "NvimTree", "Outline" },
+    disabled_filetypes = {"alpha", "dashboard", "NvimTree", "Outline", "DiffviewFiles" }, -- ":set filetype?" will show the filtype
     ignore_focus = {},
     always_divide_middle = true,
     globalstatus = false,

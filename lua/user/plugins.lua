@@ -51,12 +51,14 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
   use "moll/vim-bbye"
   use "akinsho/toggleterm.nvim"
+  use { 'sindrets/diffview.nvim'}
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use 'goolord/alpha-nvim'
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "folke/todo-comments.nvim"
   use "folke/trouble.nvim"
   use "norcalli/nvim-colorizer.lua"
   use {'stevearc/dressing.nvim'}
