@@ -24,6 +24,7 @@ local servers = {
 	"ltex",
 	"tsserver",
 	"prosemd_lsp",
+  "pyright"
 }
 
 masonlspconfig.setup({
