@@ -20,8 +20,10 @@ require "user.alpha"
 require "user.whichkey"
 require "user.copilot"
 require "user.illuminate"
+require "user.trouble"
+require "user.colorizer"
 
 -- set neovim env variable for lua
 -- set env termbidi
 vim.api.nvim_command('set termbidi')
-
+vim.api.nvim_command('set termguicolors')

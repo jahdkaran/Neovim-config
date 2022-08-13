@@ -96,6 +96,7 @@ local mappings = {
 
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["x"] = { "<cmd>TroubleToggle<cr>", "Trouble" },
 
 	p = {
 		name = "Packer",
@@ -142,7 +143,7 @@ local mappings = {
 		},
 		f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
-		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
+		I = { "<cmd>Mason<cr>", "Installer Info" },
 		j = {
 			"<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
 			"Next Diagnostic",
@@ -182,6 +183,16 @@ local mappings = {
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
+
+  --keybindings for trouble plugin
+  u = {
+    name = "trouble",
+    x = { "<cmd>Trouble<cr>", "trouble" },
+    w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
+    d = { "<cmd>Trouble document_diagnostics<cr>", "Document_diagnostics" },
+    l = { "<cmd>Trouble loclist<cr>", "loclist" },
+    q = { "<cmd>Trouble quickfix<cr>", "QuickFix" }
+  }
 }
 
 which_key.setup(setup)
