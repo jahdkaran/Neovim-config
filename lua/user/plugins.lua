@@ -67,11 +67,16 @@ return packer.startup(function(use)
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
   use "rebelot/kanagawa.nvim"
+  use 'folke/tokyonight.nvim'
   use 'sainnhe/sonokai'
   use 'navarasu/onedark.nvim'
   use 'Mofiqul/vscode.nvim'
   use "EdenEast/nightfox.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
+  use {'christianchiarulli/nvcode-color-schemes.vim'}
+  use ({ 'projekt0n/github-nvim-theme' })
+  use 'rose-pine/neovim'
+  use 'romgrk/doom-one.vim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
