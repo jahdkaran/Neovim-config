@@ -69,14 +69,17 @@ return packer.startup(function(use)
   use "rebelot/kanagawa.nvim"
   use 'folke/tokyonight.nvim'
   use 'sainnhe/sonokai'
+  use 'sainnhe/edge'
   use 'navarasu/onedark.nvim'
   use 'Mofiqul/vscode.nvim'
   use "EdenEast/nightfox.nvim"
+  use "sainnhe/everforest"
   use { "catppuccin/nvim", as = "catppuccin" }
   use {'christianchiarulli/nvcode-color-schemes.vim'}
   use ({ 'projekt0n/github-nvim-theme' })
   use 'rose-pine/neovim'
   use 'romgrk/doom-one.vim'
+  use 'marko-cerovac/material.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

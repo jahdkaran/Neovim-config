@@ -1,4 +1,4 @@
-local colorscheme = "onedark"
+local colorscheme = "edge"
 
 require('onedark').setup {
     style = 'warm',
@@ -9,8 +9,8 @@ require('onedark').setup {
     toggle_style_list = {'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'}, -- List of styles to toggle between
 }
 
-vim.g.tokyonight_style = "storm"
-vim.g.tokyonight_transparent_sidebar = true
+vim.g.edge_enable_italic = 1
+
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
