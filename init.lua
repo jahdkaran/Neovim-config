@@ -31,3 +31,4 @@ require "user.markdown"
 -- set env termbidi
 vim.api.nvim_command('set termbidi')
 vim.api.nvim_command('set termguicolors')
+

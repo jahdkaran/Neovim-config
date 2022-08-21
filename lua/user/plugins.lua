@@ -65,6 +65,7 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua"
   use {'stevearc/dressing.nvim'}
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  use 'lervag/vimtex'
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -88,6 +89,7 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
+  use { 'hrsh7th/cmp-omni' } -- omni completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
