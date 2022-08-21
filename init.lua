@@ -25,6 +25,7 @@ require "user.todo-comments"
 require "user.colorizer"
 require "user.dressing"
 require "user.diffview"
+require "user.markdown"
 
 -- set neovim env variable for lua
 -- set env termbidi

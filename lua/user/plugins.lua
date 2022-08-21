@@ -31,6 +31,8 @@ end
 
 -- Have packer use a popup window
 packer.init {
+  snapshot = nil, -- Name of the snapshot you would like to load at startup
+  snapshot_path = require("packer.util").join_paths(vim.fn.stdpath('config'), 'packersnap'), -- Default save directory for snapshots
   display = {
     open_fn = function()
       return require("packer.util").float { border = "rounded" }
@@ -62,6 +64,7 @@ return packer.startup(function(use)
   use "folke/trouble.nvim"
   use "norcalli/nvim-colorizer.lua"
   use {'stevearc/dressing.nvim'}
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
